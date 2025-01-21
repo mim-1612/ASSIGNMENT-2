@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font {
+          font-family: "Quicksand", serif;
+          font-optical-sizing: auto;
+          font-weight: 400;
+          font-style: normal;
+        }
+
+        body{
+          max-width: 1240px;
+          margin: 0 auto;
+}
+
+
+
+/* navbar styles */
+
+
+.navbar{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+}    
+.head-1{
+          display: flex;
+          gap: 10px; 
+          
+}
+.head-school{
+          font-weight: 700;
+          color: #111111;
+          font-size: 22px;
+}
+.nav-links{
+          display: flex;
+          gap: 32px;
+         
+          
+}
+.link1, .link2, .link3, .link4{
+          list-style: none;
+          text-decoration: none;
+         
+}
+.link1{
+         color: #FEA301;
+         font-weight: 500;
+}
+.link2{
+         color: #01ACFD;
+         font-weight: 500;
+}
+.link3{
+         color: #05D4DF;
+         font-weight: 500;
+
+}
+.link4{
+         color: #5D58EF;
+         font-weight: 500;  
+} 
+.btn-1{
+          color: #FFFFFF;
+          background-color: #FEA301;
+          border-radius: 8px;
+          padding: 10px;
+          width: 127px;
+          height: 40px;
+} 
+.display-none{
+          display: none;
+}
+
+
+
+/* banner section */
+
+.banner-section{
+          
+          display: flex;
+          justify-content: space-between;
+         
+          
+          
+}
+
+.empowering{
+          color: #FEA301;
+}
+.towards{
+          color: #01ACFD;
+}
+.small{
+          color: #111111;
+}
+#quick-list{
+          font-weight: 700;
+          font-size: 36px;
+}
+.banner-p{
+          color: #111111;
+          font-size: 20px;
+          font-weight: 400;
+}
+.banner-info{
+            margin-top: 150px;
+            border: 1px solid red;
+}
+.btn-2{
+          color: #FFFFFF;
+          background-color: #111111;
+          border-radius: 8px;
+          padding: 10px;
+          width: 127px;
+          height: 40px;
+
+}
+
+
+/* mobile responsive */
+
+
+@media screen and (max-width:576px){
+
+          .display-none{
+                    display: block;
+          }
+          .banner-section{
+                    flex-direction: column-reverse;
+          }
+          .head-2, .btn-1{
+                    display: none;
+          }
+          .banner-section img{
+                    max-width: 90%;
+             
+          }
+          .banner-info{
+                    max-width: 90%;
+          }
+
+}
