@@ -279,7 +279,7 @@ background: #3CD8E8;
 padding: 10px 20px;
 position: absolute;
 left: 30px;
-top: 32%;
+top: 45%;
 }
 .story-2 span{
   font-size: 15.34px;
@@ -292,6 +292,7 @@ background:#95B226;
 padding: 10px 20px;
 /* position: absolute; */
 left: 20px;
+
 
 }
 #color{
@@ -409,7 +410,7 @@ font-weight: 700;
 marquee{
   /* padding: 5px 0; */
   /* background-color: #111111; */
-  color:brown
+  color:black
 }
 
 
