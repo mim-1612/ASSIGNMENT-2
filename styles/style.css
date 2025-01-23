@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+*{
+   padding: 0;
+   margin: 0;
+}
+
 .quicksand-font {
           font-family: "Quicksand", serif;
           font-optical-sizing: auto;
@@ -15,6 +20,8 @@
 .display-flex{
   display: flex;
 }
+
+
 
 
 
@@ -112,6 +119,7 @@
           color: #111111;
           font-size: 20px;
           font-weight: 400;
+          margin: 24px 0;
 }
 .banner-info{
             margin-top: 150px;
@@ -126,6 +134,7 @@
           width: 127px;
           height: 40px;
           border: none;
+          padding-top: 15px;
 
 }
 
@@ -232,6 +241,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding: 60px 0;
   
 }
 
@@ -247,6 +257,10 @@ font-weight: 700;
   position: relative;
   max-width: 540px;
   border-radius: 12px;
+
+}
+.story-2{
+  position: relative;
 }
 .stories img{
   width: 100%;
@@ -254,18 +268,18 @@ font-weight: 700;
   height: auto;
  
 }
-.story-1 span{
+.story-1 #blue{
   font-size: 15.34px;
 font-weight: 500;
 width: 136.46px;
 height: 18.22px;
 border-radius: 47.93px;
 
-background: #95B226;
+background: #3CD8E8;
 padding: 10px 20px;
 position: absolute;
 left: 30px;
-bottom: 45%;
+top: 32%;
 }
 .story-2 span{
   font-size: 15.34px;
@@ -273,19 +287,24 @@ font-weight: 500;
 width: 136.46px;
 height: 18.22px;
 border-radius: 47.93px;
-
-background: rgb(60, 216, 232);
+margin-left: 30px;
+background:#95B226;
 padding: 10px 20px;
 /* position: absolute; */
-/* left: 30px; */
-/* bottom: 45%; */
+left: 20px;
+
+}
+#color{
+  background-color: #5D58F0;
 }
 
 .story-2 h5{
   font-size: 15.34px;
   font-weight: 700;
   line-height: 28.76px;
-  padding-left: 30px;
+  
+  padding: 30px 0;
+  margin-left: 30px;
 }
 .story-2 > div{
   background-color: #FFFFFF;
@@ -298,23 +317,98 @@ padding: 10px 20px;
 font-weight: 700;
 line-height: 38.35px;
 margin-left: 30px;
+padding: 50px 0;
 }
 .story-1 p{
   font-size: 14px;
 font-weight: 500;
 margin-left: 30px;
+/* font-size: 15.34px; */
+/* font-weight: 500; */
+line-height: 28.76px;
 }
 
 .parent{
   display: flex;
   margin-top: 40px;
   gap: 30px;
+  padding: 50px 0;
   
 }
 .stories-container .story-2{
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    gap: 20px;
+}
+.btn-3{
+  color: #FFFFFF;
+  background-color: #111111;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  width: 150px;
+ 
+  
+}
+.stories-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* --------------footer section--------- */
+
+.footer{
+  max-width: 100%;
+  background-color: #01ACFD;
+  height: 519px;
+  /* margin-top: 20px; */
+  color: #FFFFFF;
+  padding: 100px 0;
+}
+
+.part{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+ 
+}
+.part-1-info{
+       display: flex;
+       align-items: center;
+       
+}
+.part-2{
+  /* margin-left: 80px; */
+}
+.part-2 > ul > li{
+  list-style: none;
+  padding-top: 20px;
+}
+.part-3 img{
+  margin-top: 50px;
+
+}
+.part-1 h5{
+  font-size: 42.14px;
+  font-weight: 700;
+}
+.part-1-p{
+  margin-top: 15px;
+}
+.part-2 h5{
+  font-size: 24px;
+font-weight: 700;
+}
+.part-3 h5{
+  font-size: 24px;
+font-weight: 700;
+}
+
+marquee{
+  /* padding: 5px 0; */
+  background-color: #111111;
 }
 
 
@@ -334,7 +428,7 @@ margin-left: 30px;
                     display: none;
           }
           .banner-info > img{
-                    max-width: 100%;
+                    width: 90%;
                     margin: 0 auto;
              
           }
@@ -348,6 +442,18 @@ margin-left: 30px;
           .card-1, .card-2, .card-3{
             width: 90%;
             margin: 0 auto;
+          }
+          .part{
+            flex-direction: column;
+            margin-left: 30px;
+            
+          }
+          .banner-info{
+
+            text-align: center;
+          }
+          .story-1{
+            display: none;
           }
 
 }
