@@ -204,52 +204,73 @@
 .carriculum-card .read3{
           color: #8700FF;
           font-weight: 700;
+
 }
+
+.arrow img{
+  background-color: #FEA301;
+  padding: 20px;
+  border-radius: 50px;
+ 
+}
+.arrow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+}
+
+
+
+
 
 /*-------------------Strories-styles----------------- */
 
-
-.stories-head{
-  font-size: 46px;
-  font-weight: 700;
-  text-align: center;
-  
-}
 .stories{
-  padding: 60px 0;
-  background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);;
+  background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
+}
+
+.stories-container h3{
+  text-align: center;
+  font-size: 46px;
+font-weight: 700;
+
   
 }
-.stories-img #story-1-card{
-  
- 
-  width: 500px;
-  margin-top: 150px;
-  border-radius: 16px 16px 0px 0px;
-  background-color: rgb(255, 255, 255);
-  
-  
+.story-1{
+  background-color: #FFFFFF;
+  position: relative;
 }
-.all-span{
-  font-size: 1rem;
-  line-height: 29px;
-  font-family: "Raleway", serif;
-  color: #FFFFFF;
-  padding: 10px 20px;
-  background-color: #95B226;
-  border-radius: 48px;
+.stories img{
+  max-width: 100%;
 }
-.all-card{
-  margin-left: 40px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.stories span{
+  font-size: 15.34px;
+font-weight: 500;
+width: 136.46px;
+height: 18.22px;
+border-radius: 47.93px;
+
+background: rgb(60, 216, 232);
+padding: 10px 20px;
+position: absolute;
+left: 30px;
+bottom: 42%;
 }
-.stories-card .all-h5{
-  text-align: left;
+.parent{
+  display: flex;
+  margin-top: 40px;
 }
+.stories-container .story-2{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 20px;
+}
+
 
 
 /*------------------------------mobile responsive------------------------------*/
@@ -266,12 +287,21 @@
           .head-2, .btn-1{
                     display: none;
           }
-          .banner-section img{
-                    max-width: 90%;
+          .banner-info > img{
+                    max-width: 100%;
+                    margin: 0 auto;
              
           }
           .banner-info{
                     max-width: 90%;
+          }
+          .carriculum-card{
+            flex-direction: column;
+            
+          }
+          .card-1, .card-2, .card-3{
+            width: 90%;
+            margin: 0 auto;
           }
 
 }
