@@ -232,6 +232,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  
 }
 
 .stories-container h3{
@@ -244,11 +245,29 @@ font-weight: 700;
 .story-1{
   background-color: #FFFFFF;
   position: relative;
+  max-width: 540px;
+  border-radius: 12px;
 }
 .stories img{
-  max-width: 100%;
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+  height: auto;
+ 
 }
-.stories span{
+.story-1 span{
+  font-size: 15.34px;
+font-weight: 500;
+width: 136.46px;
+height: 18.22px;
+border-radius: 47.93px;
+
+background: #95B226;
+padding: 10px 20px;
+position: absolute;
+left: 30px;
+bottom: 45%;
+}
+.story-2 span{
   font-size: 15.34px;
 font-weight: 500;
 width: 136.46px;
@@ -257,13 +276,40 @@ border-radius: 47.93px;
 
 background: rgb(60, 216, 232);
 padding: 10px 20px;
-position: absolute;
-left: 30px;
-bottom: 42%;
+/* position: absolute; */
+/* left: 30px; */
+/* bottom: 45%; */
 }
+
+.story-2 h5{
+  font-size: 15.34px;
+  font-weight: 700;
+  line-height: 28.76px;
+  padding-left: 30px;
+}
+.story-2 > div{
+  background-color: #FFFFFF;
+  border-radius: 12px;
+}
+
+
+.story-1 h4{
+  font-size: 24px;
+font-weight: 700;
+line-height: 38.35px;
+margin-left: 30px;
+}
+.story-1 p{
+  font-size: 14px;
+font-weight: 500;
+margin-left: 30px;
+}
+
 .parent{
   display: flex;
   margin-top: 40px;
+  gap: 30px;
+  
 }
 .stories-container .story-2{
    display: grid;
